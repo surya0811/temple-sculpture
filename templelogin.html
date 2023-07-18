@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>TEMPLE login page </title>
+  <style>
+    body {
+      background-color: #f1ac2a;
+      font-family: Arial, sans-serif;
+      color: rgb(137, 87, 170);
+      background-image: url('images/templelogin.jpg');
+			background-repeat: no-repeat;
+    		background-size: 100%;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-family:sans-serif;
+      font-size: 38px;
+
+    }
+    
+    form {
+      background-color:white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      margin: 0 auto;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      
+    }
+    
+    input[type="text"], input[type="password"] {
+      padding: 18px;
+      width: 100%;
+      border-radius: 10px;
+      border:#f1ac2a;
+      margin-bottom: 20px;
+    }
+    
+    input[type="submit"], input[type="reset"]{
+      background-color: #c43f97;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <img src="">
+  <h1> TEMPLE LOGIN PAGE</h1>
+  <form action="/templelogin.html" method="POST">
+    <label for="templeid"><b>TEMPLEID :</b></label>
+    <input type="text" id="templeid" name="templeid" placeholder="ENTER TEMPLEID">
+    <label for="password"><b>PASSWORD </b></label>
+    <input type="password" id="password" name="password" placeholder="ENTER PASSWORD">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="Submit">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="reset" value="Reset">
+    <script>
+      // Check if the "error" query parameter exists and has a value of 1
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        if (error === '3') {
+          // Display an alert window
+          alert('Incorrect username or password');
+        }
+      </script>
+  </form>
+</body>
+</html>

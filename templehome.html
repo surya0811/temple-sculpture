@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temple Login</title>
+    <style>
+      /* Style the navigation bar */
+      .back{
+        background-image: url('images/adminhome1.jpg');
+        background-repeat: no-repeat;
+        background-size: 140%;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #3818ec;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        
+      }
+      
+      /* Style the links inside the navigation bar */
+      .navbar a {
+        float: left;
+        display: block;
+        color: rgb(19, 17, 17);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+      
+      .header {
+         display: flex;
+         justify-content: center; /* center horizontally */
+        align-items: center;
+        padding: 30px;
+        background-color: #a68fd3;
+        color: #fff;
+       }
+       footer {
+        background-image: url('images/hone1.jpg');
+        background-repeat: no-repeat;
+         background-size: 100%;
+        background-color: #d65353;
+        color: rgb(216, 53, 67);
+        text-align: center;
+        padding: 10px; 
+        flex: auto;/* decrease the padding value */
+        position:relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+      }
+      .footerimage {
+        background-image: url('images/logo.jpg');
+          background-repeat: no-repeat;
+            background-size: 10%;
+            display: block;
+            margin-right: 10px;
+            position:relative;
+            font-size: 20px;
+            
+        
+      }
+
+
+		.header  {
+          background-image: url('images/templehome1.png');
+          background-repeat: no-repeat;
+          background-size: 100%;
+			    margin: 0;
+          color: #1d1d16;
+			    font-size: 38px;
+			    font-weight: bold;
+          text-align: center;
+		}
+    .logo {
+        background-image: url('images/swastik.png');
+          background-repeat: no-repeat;
+          background-size: 15px;
+          opacity: 0.8;
+          margin-left: 4rem;
+          margin-top: 38px;
+          width: 180px;
+          height: 160px;
+          transition-property: inherit;
+    }
+      /* Change the color of links on hover */
+      .navbar a:hover {
+        background-color: #eb6bc6;
+        color: black;
+      }
+      
+      /* Style the "dropdown" button */
+      .dropdown {
+        float: left;
+        overflow: hidden;
+        color: #000;
+      }
+      
+      /* Style the "dropdown" button */
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: rgb(17, 18, 19);
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+      }
+      
+      /* Style the dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Style the links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      /* Change the color of dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      /* Style the logout button */
+      .logout {
+        float: right;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        image-resolution:50%;
+        border-image: auto;
+    }
+
+      .gallery a {
+        margin: 10px;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+             color: #1d1d16;
+             margin-bottom: 20px;
+            text-align: justify;
+          }
+
+
+        p:hover {
+        color: #f75066;
+          background-color: #b5ca3f00;
+      }
+      
+
+   
+
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="header">
+      <img src="" >
+      <img src="images/swastik.png" alt="logo" class ="logo">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h2> TEMPLE ADMINISTRATION  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PORTAL</h2></div>
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <!-- Dropdown menu -->
+      <div class="dropdown">
+        <button class="dropbtn">Services 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <!-- <a href="gettempleintemple.html">ADD TEMPLE</a> -->
+          <a href="/getsculptureintemple">ADD SCULPTURE</a>
+          
+        </div>
+      </div>
+      <a href="contact-us.html">Contact</a>
+      <!-- Logout button -->
+      <div class="logout">
+        <a href="homewithlogindropdown">Logout</a>
+      </div>
+    
+
+    </div>
+    <div class ="back">
+        <img src="">
+    
+
+<div class="gallery">
+    <a href="https://online.tirupatibalaji.ap.gov.in/home/dashboard"><img src="images/tirupathi.jpg" alt="Temple 1" width="300" height="200"><p><b>TIRUMALA/TIRUPATI</b></p></a>
+    <a href="https://kanchikamakshi.org/pujas/"><img src="images/kamakshi.jpg" alt="Temple 2" width="300" height="200"><p><b>KANCHI KAMAKSHI</b></p></a>
+    <a href="https://hrce.tn.gov.in/hrcehome/index_temple.php?tid=1816"><img src="images/ekambareswar.jpg" alt="Temple 3" width="300" height="200"><p><b>EKAMBARESWAR TEMPLE</b></p></a>
+    <a href="https://vellore.nic.in/tourist-place/vellore-fort/"><img src="images/forttemple.jpg" alt="Temple 4" width="300" height="200"><p><b>VELLORE-FORT TEMPLE</b></p></a>
+    <a href="https://kanakadurgamma.org/en-in/home"><img src="images/kanakadurga.jpg" alt="Temple 4" width="300" height="200"><p><b>KANAKADURGA TEMPLE</b></p></a>
+    <a href="https://srikalahasthitemple.com/"><img src="images/kalahasthi.jpg" alt="Temple 4" width="300" height="200"><p><b>SRI KALAHASTHI TEMPLE</b></p></a>
+    <a href="https://sabarimala.kerala.gov.in/"><img src="images/sabarimala.jpg" alt="Temple 4" width="300" height="200"><p><b>SABARIMALAI TEMPLE</b></p></a>
+    <a href="thttps://spst.in/"><img src="images/padmanabhaswamy.jpg" alt="Temple 4" width="300" height="200"><p><b>PADMANABHASWAMI TEMPLE</b></p></a>
+   <!-- <a href="https://www.vemulawadatemple.org/"><img src="images/rajarajeswari.jpg" alt="Temple 4" width="300" height="200"><p><b> RAJARAJESHWARY TEMPLE </b></p></a>-->
+  
+  </div>
+
+ <br></br>
+ <br></br>
+</div>
+
+ <!-- <footer style="position: fixed; bottom: 0; left: 0; right: 0;"> -->
+  <footer>
+  <h2><b>CONTACT US:</b></h2>
+  <h3><b>PHONE: 123-456-7890</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>EMAIL:info@templelogin.com</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </h3>
+  <div class="footerimage">
+   <img src="">
+   <h3><b>COPY RIGHT@TN.GOV.IN</b></h3> 
+  </div>
+</footer>
+
+  </body>
+</html>

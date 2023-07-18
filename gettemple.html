@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ADD TEMPLE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    body {
+    
+    font-family: Arial, sans-serif;
+    /*background-color: #f0d1e5;*/
+    margin: 0;
+    padding: 0;
+    background-image: url('images/sucess1.jpg');
+		background-repeat: no-repeat;
+    background-size: 100%;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2d8fdf;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="number"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 18px;
+  }
+  
+  
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  button[type="reset"]:hover {
+    background-color: #45a049;
+  }
+  
+  </style>
+  <img src="">
+  <h1>TEMPLE DETAILS</h1>
+  <form action=/temple method =post>
+    <label for="templeid">templeid:</label>
+    <input type="number" id="templeid" name="templeid" required><br>
+
+    <label for="name">name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="address">address:</label>
+    <input type="text" id="address" name="address" required><br>
+
+    
+     <label for="stateid">state:</label>
+      <select id="stateid" name="stateid">
+
+      <option value="1">AndhraPradesh</option>
+      <option value="2">ArunchalPradesh</option>
+      <option value="3">Assam</option>
+      <option value="4">Bihar</option>
+      <option value="5">Chattisgarh</option>
+      <option value="6">goa</option>
+      <option value="7">gujarath</option>
+      <option value="8">Haryana</option>
+      <option value="9">HimachalPradesh</option>
+      <option value="10">jammu and kashmir</option>
+      <option value="11">Jharkahand</option>
+      <option value="12">Karnataka</option>
+      <option value="13">Kerala</option>
+      <option value="14">MadhyaPradesh</option>
+      <option value="15">Maharastra</option>
+      <option value="16">Manipur</option>
+      <option value="17">Meghalaya</option>
+      <option value="18">Mizoram</option>
+      <option value="19">Nagaland</option>
+      <option value="20">Odisha</option>
+      <option value="21">Punjab</option>
+      <option value="22">Rajasthan</option>
+      <option value="23">Sikkim</option>
+      <option value="24">Tamilnadu</option>
+      <option value="25">Telangana</option>
+      <option value="26">Tripura</option>
+      <option value="27">Uttarkhand</option>
+      <option value="28">UttarPradesh</option>
+      <option value="29">Westbengal</option>
+    </select>
+  
+   
+    <label for="city">city:</label>
+    <input type="text" id="city" name="city" required><br>
+
+    <label for="pincode">pincode:</label>
+    <input type="text" id="pincode" name="pincode" required><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="submit">Submit</button>
+    &nbsp;&nbsp;&nbsp;
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

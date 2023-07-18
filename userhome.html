@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sculpture Management System</title>
+	<style>
+		.body {
+			margin: 0;
+			padding: 0;
+		}
+		/* Styling for the header */
+		header {
+			background-color: #2cbbd4;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			font-size: 36px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			background-image: url('images/userhome.jpg');
+			background-repeat: no-repeat;
+    		background-size: 100%;
+
+		}
+
+		/* Styling for the navigation menu */
+		nav {
+			background-color: #2196f3;
+			padding: 10px;
+			overflow: hidden;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+        nav form {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+nav button[type="submit"] {
+  background-color: #fff;
+  color: #2196f3;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+nav button[type="submit"]:hover {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+
+		nav a {
+			display: inline-block;
+			padding: 6px;
+			color: white;
+			text-decoration: none;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		nav a:hover {
+			background-color: #fff;
+			color: #2196f3;
+		}
+
+		/* Styling for the hero section */
+		.hero {
+			background-image: url('images/master1.jpeg');
+			background-size: cover;
+			background-position: center;
+			height: 505px;
+			width: 1030px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.hero h1 {
+			font-size: 48px;
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px #000;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		
+
+		/* Styling for the main content section */
+		.content {
+			padding: 50px;
+			font-size: 24px;
+			line-height: 1.5;
+			background-image: url('images/design.jpg');
+			background-repeat: no-repeat;
+    		background-size: 100%;
+			font-weight: bolder;
+		}
+
+		/* Styling for the footer */
+		footer {
+			background-color: #1565c0;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			font-size: 18px;
+		}
+
+		footer a {
+			color: white;
+			text-decoration: none;
+		}
+		.container {
+    text-align: center;
+  }
+  
+  form {
+    display: inline-block;
+    border: 3px solid #111311;
+    border-radius: 20px;
+    padding: 12px;
+    /* background-color: hsl(66, 80%, 56%); */
+	background-image: url('images/meenakshi.jpg');
+	background-size: cover;
+	background-position: fill;
+  }
+  
+  label {
+    display: block;
+	font-size: 20px;
+	font-weight: bolder;
+    margin-bottom: 30px;
+    color: rgb(208, 230, 12);
+	font-weight:bolder;
+  }
+  
+  select,
+  input[type="text"],
+  input[type="submit"] {
+    display:flexbox;
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+  }
+  
+  select {
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23ccc' d='M17.293 9.293l-5-5a1 1 0 0 0-1.414 1.414L14.586 9H7a1 1 0 1 0 0 2h7.586l-4.707 4.707a1 1 0 1 0 1.414 1.414l5-5a1 1 0 0 0 0-1.414z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  input[type="submit"] {
+    background-color: #0080ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0059b3;
+  }
+ 
+  #searchbar input[type="text"] {
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+}
+
+#searchbar button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #93d5ee;
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+input[type="text"] {
+  border: 1px solid rgba(20, 10, 10, 0);
+  border-radius: 12px;
+  color: rgb(19, 17, 17);
+}
+
+
+#searchbar button:hover {
+  background-color: #f8a7dd;
+  transform: scale(1.1);
+}
+.search1 {
+	margin-left: 65rem;
+	margin-top: -30rem;
+	
+
+}
+.search1 h1 {
+	font-size: 34px;
+	padding: 12px;
+	margin-top: -5rem;
+	color: white;
+	background-color: #2cbbd4;
+}
+.logout-btn {
+        float: right;
+		padding: 8px;
+		border: none;
+		border-radius: 20px;
+		background-color: #93d5ee;
+		color: white;
+		font-size: 18px;
+		margin-left: 10px;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		
+		
+	</style>
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<img src="">
+		<h1>Sculpture Management Console</h1>
+	</header>
+
+	<!-- Navigation menu -->
+<nav>
+    <a href="/home.html">Home</a>
+    <a href="/imagepage.html">Sculptures</a>
+    <a href="#">Artists</a>
+    <a href="/imagegallery">Exhibitions</a>
+
+    <!-- <form action="/search" method="GET">
+		<input type="text" id="search" name="q" placeholder="Search">
+      <button type="submit">Go</button>
+    </form> -->
+    <a href="contact-us.html">Contact</a>
+	<button class="logout-btn">
+		<a href="/">LOGOUT</a>
+	</button> 
+	
+  </nav>
+  
+
+	<!-- Hero section -->
+	<section class="hero">
+		<h1>Discover the beauty of sculpture</h1>
+	</section>
+	<div class="search1">
+		<h1>SEARCH HERE</h1>
+		<form action="/search" method="GET">
+			<label for="searchBy">Search By:</label>
+			<select id="searchBy" name="searchBy">
+			  <option value="keyword">KEYWORD</option>
+			  <option value="state">STATE</option>
+			  <option value="name">TEMPLE</option>
+			</select>
+			<div id="stateSearch">
+			  <label for="search1">State:</label>
+			  <select id="search1" name="search1">
+
+				<option value="AndhraPradesh">AndhraPradesh</option>
+				<option value="ArunchalPradesh">ArunchalPradesh</option>
+				<option value="Assam">Assam</option>
+				<option value="Bihar">Bihar</option>
+				<option value="Chattisgarh">Chattisgarh</option>
+				<option value="goa">goa</option>
+				<option value="gujarath">gujarath</option>
+				<option value="Haryana">Haryana</option>
+				<option value="HimachalPradesh">HimachalPradesh</option>
+				<option value="Jharkahand">Jharkahand</option>
+				<option value="Karnataka">Karnataka</option>
+				<option value="Kerala">Kerala</option>
+				<option value="MadhyaPradesh">MadhyaPradesh</option>
+				<option value="Maharastra">Maharastra</option>
+				<option value="Manipur">Manipur</option>
+				<option value="Meghalaya">Meghalaya</option>
+				<option value="Mizoram">Mizoram</option>
+				<option value="Nagaland">Nagaland</option>
+				<option value="Odisha">Odisha</option>
+				<option value="Punjab">Punjab</option>
+				<option value="Rajasthan">Rajasthan</option>
+				<option value="Sikkim">Sikkim</option>
+				<option value="Tamilnadu">Tamilnadu</option>
+				<option value="Telangana">Telangana</option>
+				<option value="Tripura">Tripura</option>
+				<option value="Uttarkhand">Uttarkhand</option>
+				<option value="UttarPradesh">UttarPradesh</option>
+				<option value="Westbengal">Westbengal</option>
+			  </select>
+			  <!-- <input type="text" id="search1" name="search1"> -->
+			</div>
+			<label for="search">Search:</label>
+			<input type="text" id="search" name="search">
+			<input type="submit" value="GO">
+			</form>
+	  <script>
+			const searchBy = document.getElementById("searchBy");
+			const stateSearch = document.getElementById("stateSearch");
+			
+			// hide the state search box initially
+			stateSearch.style.display = "none";
+			
+			// add event listener to show/hide state search box
+			searchBy.addEventListener("change", function() {
+			  if (searchBy.value === "state") {
+			  stateSearch.style.display = "block";
+			  } else {
+			  stateSearch.style.display = "none";
+			  }
+			});
+			</script>
+		</div>
+
+	<!-- Main content section -->
+	<!-- <br></br>
+	<br></br> -->
+	<!-- <br></br>
+	<br></br> -->
+	
+	
+	<section class="content">
+		<h2>Welcome to the Sculpture Management System</h2>
+		<p>Our system provides a comprehensive database of sculptures, artists, and exhibitions, making it easy for you to explore the world of sculpture. Whether you are a curator, collector, or just a lover of art, our platform can help you find the information you need.</p>
+
+		
+    </section>
+</body>
+</html>
+

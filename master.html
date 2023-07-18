@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sculpture management</title>
+    <style>
+      /* Styles for the header */
+      header {
+        background-color: #93d5ee;
+        color: rgb(19, 17, 17);
+        padding: 20px;
+        text-align: center;
+        font-size: 28px;
+        font-family:'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
+        background-image: url('images/master2.jpeg');
+			  background-repeat: no-repeat;
+    		background-size: 100%;
+      }
+      
+      /* Styles for the search bar */
+      #searchbar {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+      }
+      
+      input[type="text"] {
+        padding: 10px;
+        width: 50%;
+        border-radius: 20px;
+        border: none;
+        font-size: 18px;
+      }
+      
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: #4ecdc4;
+        color: white;
+        font-size: 18px;
+        margin-left: 10px;
+      }
+      
+      /* Styles for the about dropdown */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        padding-left: 40%;
+        font-size:22px;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f7fff7;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #4ecdc4;
+        color: white;
+      }
+      /* DROP DOWN CONTENT FOR REPORT*/
+      .dropdown1 {
+        position: relative;
+        display: inline-block;
+        padding-left: 90%;
+        padding-top: -6%;
+        padding-inline-start: 20px;
+        font-size:22px;
+      }
+      
+      .dropdown-content1 {
+        display: none;
+        position: absolute;
+        background-color: #f7fff7;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown1:hover .dropdown-content1 {
+        display: block;
+      }
+      
+      .dropdown-content1 a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+      }
+      
+      .dropdown-content1 a:hover {
+        background-color: #4ecdc4;
+        color: white;
+      }
+      .image {
+       background-image: url('images/hone1.jpg');
+			  background-repeat: no-repeat;
+    		background-size: 100%;
+        
+     }
+     
+      
+      
+      /* Styles for the body */
+      body {
+        /*background-color: #f7fff7;*/
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        /*line-height: 1.5;*/
+       margin: 0;
+      }
+      .hero {
+			background-image: url('images/meenakshi1.jpg');
+			background-size: cover;
+			background-position: center;
+      height: 505px;
+			width: 1030px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+    .hero1{
+      
+      margin-top: 82rem;
+      
+      
+    }
+      form {
+    display: inline-block;
+    border: 3px solid #111311;
+    border-radius: 20px;
+    padding: 12px;
+    /* background-color: hsl(66, 80%, 56%); */
+    background-image: url('images/meenakshi.jpg');
+			background-size: cover;
+			background-position: fill;
+  }
+  
+  label {
+    display: block;
+	font-size: 20px;
+	font-weight: bolder;
+    margin-bottom: 30px;
+    color: rgb(26, 24, 24);
+  }
+  
+  select,
+  input[type="text"],
+  input[type="submit"] {
+    display:flexbox;
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+  }
+  
+      select {
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23ccc' d='M17.293 9.293l-5-5a1 1 0 0 0-1.414 1.414L14.586 9H7a1 1 0 1 0 0 2h7.586l-4.707 4.707a1 1 0 1 0 1.414 1.414l5-5a1 1 0 0 0 0-1.414z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+      .search1 {
+	      margin-left: 65rem;
+	      margin-top: -30rem;
+        margin-bottom: 50rem;
+      }
+      .search1 h1 {
+        font-size: 34px;
+        padding: 12px;
+        margin-top: -5rem;
+        color: white;
+        background-color: gold;
+}
+    .side {
+      display: inline;
+     margin-top: 11rem;
+     
+     
+    }
+    .side img {
+      width: 290px; 
+      height: 200px; 
+      object-fit: cover;
+      margin-right: 10px; 
+      padding: 3px;
+      border: 4px solid rgb(10, 104, 245);
+    }
+    .side h2 {
+      text-align: center;
+      margin-top: 3rem;
+      font-style:inherit;
+      font-size: 32px;
+      font-weight: bolder;
+      background-color: rgb(216, 152, 184);
+    }
+
+
+
+      
+    </style>
+  </head>
+  <body>
+    <!-- Header with site title and slogan -->
+    <header>
+      <h1>ADMINISRATOR  PORTAL</h1>
+      
+    </header>
+    <div class ='image'>
+      <img src="">
+ <!-- About dropdown -->
+    <div class="dropdown">
+      <a href="#"><b>SCULPTURE MASTER</b></a>
+      <div class="dropdown-content">
+        <a href="gettemple.html">ADD TEMPLE</a>
+        <a href="/getsculpture.html">ADD SCULPTURE</a>
+        <a href="gettemplelogin.html">ADD TEMPLE LOGIN</a>
+        <a href="getcity.html">ADD CITY</a>
+        <a href="getmaterial.html">ADD MATERIAL</a>
+      </div>
+    </div>
+
+    <!-- About dropdown1 -->
+    <div class="dropdown1">
+      <a href="#"><b>REPORT</b></a>
+      <div class="dropdown-content1">
+        <a href="/templeview">LIST OF TEMPLES</a>
+        <a href="/templestate">TEMPLE ROUTES STATEWISE</a>
+        <a href="/sculptureview">LIST OF SCULPTURES</a>
+        <a href="/sculpturestate">SCULPTURE ROUTES STATEWISE</a>
+        <a href="/sculpturetemple">LIST OF TEMPLE,SCULPTURE</a>
+      </div>
+    </div>
+    <br></br>
+    
+   </div>
+   
+   <section class="hero">
+		<h1></h1>
+    <div class="hero1">
+      <!-- <h2 align="center"  ><b>IMPORTANCE OF TEMPLES IN INDIA</b></h2> -->
+      <p align="justify" style="text-indent:50px;background-color:rgba(182, 235, 113, 0.445);color:rgb(17, 1, 1);line-height:25px;padding:10px;font-size:18px;letter-spacing:1px;border-radius:30px"><b>A Hindu temple, or mandir or koil or kovil in Indian languages, is a house, seat and body of divinity for Hindus. It is a structure designed to bring human beings and gods together through worship, sacrifice, and devotion. The symbolism and structure of a Hindu temple are rooted in Vedic traditions, deploying circles and squares. It also represents recursion and the representation of the equivalence of the macrocosm and the microcosm by astronomical numbers, and by "specific alignments related to the geography of the place and the presumed linkages of the deity and the patron". A temple incorporates all elements of the Hindu cosmos — presenting the good, the evil and the human, as well as the elements of the Hindu sense of cyclic time and the essence of life — symbolically presenting dharma, artha, kama, moksha, and karma.</b></p>
+      <p align="justify"  style="text-indent:50px;background-color:rgba(149, 233, 14, 0.329);color:rgb(226, 30, 56);line-height:25px;padding:10px;font-size:18px;letter-spacing:1px;border-radius:30px"><b>The spiritual principles symbolically represented in Hindu temples are given in the ancient Sanskrit texts of India (for example, the Vedas and Upanishads), while their structural rules are described in various ancient Sanskrit treatises on architecture (Bṛhat Saṃhitā, Vāstu Śāstras). The layout, the motifs, the plan and the building process recite ancient rituals, geometric symbolisms, and reflect beliefs and values innate within various schools of Hinduism. A Hindu temple is a spiritual destination for many Hindus, as well as landmarks around which ancient arts, community celebrations and economy have flourished.</b></p>
+      <p align="justify"  style="text-indent:50px;background-color:rgb(46, 88, 122);color:white;line-height:25px;padding:10px;font-size:18px;letter-spacing:1px;border-radius:30px"><b>Hindu temples come in many styles, are situated in diverse locations, deploy different construction methods and are adapted to different deities and regional beliefs, yet almost all of them share certain core ideas, symbolism and themes. They are found in South Asia, particularly India and Nepal, Bangladesh, Pakistan, Sri Lanka, in Southeast Asian countries such as Cambodia, Vietnam, Malaysia, and Island of Indonesia, and countries such as Canada, Fiji, France, Guyana, Kenya, Mauritius, the Netherlands, South Africa, Suriname, Tanzania, Trinidad and Tobago, Uganda, the United Kingdom, the United States, and other countries with a significant Hindu population. The current state and outer appearance of Hindu temples reflect arts, materials and designs as they evolved over two millennia; they also reflect the effect of conflicts between Hinduism and Islam since the 12th century. The Swaminarayanan Akshardham in Robbinsville, New Jersey between the New York and Philadelphia metropolitan areas, was inaugurated in 2014 as one of the world's largest Hindu temples.</b></p>
+ 
+
+    
+  </div>
+	</section>
+   <div class="search1">
+		<h1>SEARCH HERE</h1>
+		<form action="/search" method="GET">
+			<label for="searchBy">Search By:</label>
+			<select id="searchBy" name="searchBy">
+			  <option value="keyword">KEYWORD</option>
+			  <option value="state">STATE</option>
+			  <option value="name">TEMPLE</option>
+			</select>
+			<div id="stateSearch">
+			  <label for="search1">State:</label>
+        <select id="search1" name="search1">
+          
+          <option value="AndhraPradesh">AndhraPradesh</option>
+          <option value="ArunchalPradesh">ArunchalPradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chattisgarh">Chattisgarh</option>
+          <option value="goa">goa</option>
+          <option value="gujarath">gujarath</option>
+          <option value="Haryana">Haryana</option>
+          <option value="HimachalPradesh">HimachalPradesh</option>
+          <option value="Jharkahand">Jharkahand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="MadhyaPradesh">MadhyaPradesh</option>
+          <option value="Maharastra">Maharastra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamilnadu">Tamilnadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttarkhand">Uttarkhand</option>
+          <option value="UttarPradesh">UttarPradesh</option>
+          <option value="Westbengal">Westbengal</option>
+        </select>
+			  <!-- <input type="text" id="search1" name="search1"> -->
+			</div>
+			<label for="search">Search:</label>
+			<input type="text" id="search" name="search">
+			<input type="submit" value="GO">
+			</form>
+	  <script>
+			const searchBy = document.getElementById("searchBy");
+			const stateSearch = document.getElementById("stateSearch");
+			
+			// hide the state search box initially
+			stateSearch.style.display = "none";
+			
+			// add event listener to show/hide state search box
+			searchBy.addEventListener("change", function() {
+			  if (searchBy.value === "state") {
+			  stateSearch.style.display = "block";
+			  } else {
+			  stateSearch.style.display = "none";
+			  }
+			});
+			</script>
+      <div class="side">
+        <h2><b>SCULPTURES</b></h2>
+        <br/>
+      <img src="images/master3.jpeg">
+      <img src="images/side1.jpeg">
+      <img src="images/side2.jpg">
+    </div>
+</body>
+
+</html>

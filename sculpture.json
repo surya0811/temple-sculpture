@@ -1,0 +1,110 @@
+[
+	{
+		"sculptureid" : "200",
+		"sculpturename" : "kamakshi amman",
+		"templeid" : 100,
+		"materialid" : 302,
+		"image" : ?,
+		"description" : "The Kamatchi Amman Temple is an ancient Hindu Temple dedicated to the goddess Kamakshi, one of the highest aspects of Adi Shakti in Shaktism.",
+		"keyword" : "kamakshi"
+	},
+	{
+		"sculptureid" : "201",
+		"sculpturename" : "shiva lingam",
+		"templeid" : 101,
+		"materialid" : 303,
+		"image" : ?,
+		"description" : "Ekambareswarar Temple is a Hindu temple dedicated to the deity Shiva, located in the town of Kanchipuram in Tamil Nadu, India. It is significant to the Hindu sect of Saivism ",
+		"keyword" : "ekambareswar"
+	},
+	{
+		"sculptureid" : "202",
+		"sculpturename" : "narayani amman",
+		"templeid" : 102,
+		"materialid" : 301,
+		"image" : ?,
+		"description" : "Sri Sakthi Narayani Amma, affectionately known as Amma, is an esteemed spiritual leader in India. With the aim of promoting love and wisdom throughout the world ",
+		"keyword" : "narayani "
+	},
+	{
+		"sculptureid" : "203",
+		"sculpturename" : "kanakadurga amma",
+		"templeid" : 103,
+		"materialid" : 302,
+		"image" : ?,
+		"description" : "Kanaka Durga Temple is a Hindu Temple dedicated to Goddess Kanaka Durga.",
+		"keyword" : "durgamma"
+	},
+	{
+		"sculptureid" : "204",
+		"sculpturename" : "mallikarjuna swamy",
+		"templeid" : 104,
+		"materialid" : 306,
+		"image" : ?,
+		"description" : "This famous temple is in Jonnawada village at a distance of 13 kms from Nellore town in Andhra Pradesh. This temple was built in 1150 by Manumasiddhi on the northern bank of the Penna river.",
+		"keyword" : "narasimha "
+	},
+	{
+		"sculptureid" : "205",
+		"sculpturename" : "jagannath",
+		"templeid" : 105,
+		"materialid" : 302,
+		"image" : ?,
+		"description" : "Char Dham v t e Puri Rameswaram Dwaraka Badrinath The Jagannath Temple is an important Hindu temple dedicated to Jagannath, a form of Vishnu – one of the trinity of supreme divinity in Hinduism.",
+		"keyword" : "khandhobha"
+	},
+	{
+		"sculptureid" : "206",
+		"sculpturename" : "kamakshi utsav",
+		"templeid" : 100,
+		"materialid" : 305,
+		"image" : ?,
+		"description" : "this idol is used to do abhishekam for every pournima at night time",
+		"keyword" : "ut-kamakshi"
+	},
+	{
+		"sculptureid" : "207",
+		"sculpturename" : "jogulamba devi",
+		"templeid" : 106,
+		"materialid" : 303,
+		"image" : ?,
+		"description" : "Jogulamba temple is regarded as a Shakti Peetha where Sati Devi's upper teeth fell. The mythology of Daksha yagna and Sati's self immolation is the origin story of Shakti Peethas.",
+		"keyword" : "jogulalamba "
+	},
+	{
+		"sculptureid" : "208",
+		"sculpturename" : "balaji",
+		"templeid" : 107,
+		"materialid" : 302,
+		"image" : ?,
+		"description" : "The temple is one of the oldest in Telengana, having been built during the time of Akkanna and Madanna, the uncles of Bhakta Ramdas",
+		"keyword" : "visabalaji"
+	},
+	{
+		"sculptureid" : "209",
+		"sculpturename" : "annamalayier",
+		"templeid" : 108,
+		"materialid" : 303,
+		"image" : ?,
+		"description" : "The Arunachalesvara temple is one of the Pancha Bhoota Stalams, or five Shiva temples, with each a manifestation of a natural element: earth, water, air, sky and fire.",
+		"keyword" : "arunachalam"
+	},
+	{
+		"sculptureid" : "210",
+		"sculpturename" : "vinayak",
+		"templeid" : 109,
+		"materialid" : 307,
+		"image" : ?,
+		"description" : "most powerful god for studies and concentration",
+		"keyword" : "ganesh"
+	},
+	{
+		"sculptureid" : "211",
+		"sculpturename" : "bruhadishwar",
+		"templeid" : 110,
+		"materialid" : 303,
+		"image" : ?,
+		"description" : "This South Indian style is most fully realized both in scale and detail in the Brihadeshwara temple built between 1003 and 1010 by the Chola king Rajaraja ",
+		"keyword" : "thanjal"
+	}
+]
