@@ -1,11 +1,14 @@
 {
   "name": "nodelogin",
+  "homepage":"https://surya0811.github.io/temple-sculpture",
   "version": "1.0.0",
   "description": "",
   "main": "login.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon login.js"
+    "start": "nodemon login.js",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +24,7 @@
     "express-sessions": "^1.0.1",
     "formidable": "^2.1.1",
     "fs": "^0.0.1-security",
+    "gh-pages": "^5.0.0",
     "jsonwebtoken": "^9.0.0",
     "jspdf": "^2.5.1",
     "morgan": "^1.10.0",
